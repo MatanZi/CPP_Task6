@@ -29,9 +29,11 @@ public:
     //------------------------------ Operators ----------------------------
     friend std::ostream &operator<<(std::ostream &os, const Square &square);
 
-    bool operator==(const Square &rhs) const;
+    bool operator==(const Square &square) const;
 
-    bool operator!=(const Square &rhs) const;
+    bool operator==(const char sign) const;
+
+    bool operator!=(const Square &square) const;
 
     void operator=(const char square);
 };
