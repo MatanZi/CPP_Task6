@@ -4,7 +4,7 @@
 //
 
 #include "Board.h"
-//----------------------------- Destructor ------------------------------------------
+//----------------------------- Constructor / Destructor -----------------
 
 Board::Board(const size_t _gameSize) : _gameSize(_gameSize) {
     this->_gameSize = _gameSize;
@@ -14,9 +14,21 @@ Board::Board(const size_t _gameSize) : _gameSize(_gameSize) {
     }
 }
 
+Board::Board(const Board &board) {
+    this->_gameSize = board._gameSize;
+    this->_board = new Square *[this->_gameSize];
+    for (int i = 0; i < this->_gameSize; i++)
+        _board[i] = new Square[this->_gameSize];
+    for (size_t i = 0; i < this->_gameSize; i++) {
+        for (size_t j = 0; j < this->_gameSize; j++) {
+            this->_board[i][j].setSquare(board._board[i][j].getSquare());
+        }
+    }
+}
+
 Board::~Board() {
-    for (int i = 0; i < _gameSize; ++i) {
-        delete[](this->_board[i]);
+    for (int i = 0; i < this->_gameSize; ++i) {
+        delete[] this->_board[i];
     }
     delete[] _board;
 }
@@ -95,9 +107,3 @@ Board& Board::operator=(const Board &board) {
     }
     return *this;
 }
-
-
-
-
-
-
