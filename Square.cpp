@@ -8,8 +8,10 @@ char Square::getSquare() const {
     return _square;
 }
 
-void Square::setSquare(char square) {
-    this->_square = square;
+void Square::setSquare(char sign) {
+    if(sign != '.' && sign != 'X' && sign != 'O')
+        IllegalCharException(sign); 
+    this->_square = sign;
 }
 //------------------------------ Function -----------------------------
 Square::operator char() const {
