@@ -7,5 +7,5 @@
 IllegalCoordinateException::IllegalCoordinateException(int row, int col) : _row(row), _col(col) {}
 
 string IllegalCoordinateException::theCoordinate()const {
-    return "Row = " + to_string(_row) +" , Col = " +to_string(_col);
+    return to_string(_row) +","+to_string(_col);
 }
