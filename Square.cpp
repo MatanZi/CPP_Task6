@@ -25,6 +25,10 @@ bool Square::operator==(const Square &square) const {
     return this->_square== square.getSquare();
 }
 
+bool Square::operator==(const char sign) const {
+    return this->getSquare() == sign;
+}
+
 bool Square::operator!=(const Square &square) const {
     return !(square.getSquare() == this->_square);
 }
