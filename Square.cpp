@@ -5,7 +5,7 @@
 #include "Square.h"
 //------------------------ Getters and Setters-------------------------
 char Square::getSquare() const {
-    return this->_square;
+    return _square;
 }
 
 void Square::setSquare(char square) {
@@ -17,7 +17,7 @@ Square::operator char() const {
 }
 //------------------------------ Operators ----------------------------
 std::ostream &operator<<(std::ostream &os, const Square &square) {
-    os << "_square: " << square.getSquare();
+    os <<square.getSquare();
     return os;
 }
 
@@ -30,7 +30,7 @@ bool Square::operator!=(const Square &square) const {
 }
 
 void Square::operator=(const char square) {
-    this->setSquare(square);
+    setSquare(square);
 }
 
 //------------------------ Constractor -------------------------------
