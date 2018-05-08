@@ -22,6 +22,8 @@ public:
     //----------------------------- Constructor / Destructor ----------------------------
     Board(const size_t gameSize);
 
+    Board(const Board& board);
+
     virtual ~Board();
 
     //----------------------------- Function --------------------------------------------
