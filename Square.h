@@ -7,6 +7,8 @@
 
 
 #include <ostream>
+#include "IllegalCoordinateException.h"
+#include "IllegalCharException.h"
 
 class Square {
 private:
@@ -21,7 +23,7 @@ public:
     //------------------------ Getters andSetters-------------------------
     char getSquare() const;
 
-    void setSquare(char square);
+    void setSquare(char sign);
 
     //------------------------------ Function -----------------------------
     operator char() const;
@@ -36,6 +38,7 @@ public:
     bool operator!=(const Square &square) const;
 
     void operator=(const char square);
+
 };
 
 
