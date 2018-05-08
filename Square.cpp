@@ -10,7 +10,7 @@ char Square::getSquare() const {
 
 void Square::setSquare(char sign) {
     if(sign != '.' && sign != 'X' && sign != 'O')
-        IllegalCharException(sign); 
+        throw IllegalCharException(sign);
     this->_square = sign;
 }
 //------------------------------ Function -----------------------------
