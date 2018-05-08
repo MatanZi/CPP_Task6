@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Board.cpp
+Board.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Board.h
+Square.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Square.h
+Board.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Board.h
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Board.h
+iostream
+-
+Square.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Square.h
+IllegalCoordinateException.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCoordinateException.h
+IllegalCharException.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCharException.h
+vector
+-
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCharException.cpp
+IllegalCharException.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCharException.h
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCharException.h
+iostream
+-
+exception
+-
+string
+-
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCoordinateException.cpp
+IllegalCoordinateException.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCoordinateException.h
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/IllegalCoordinateException.h
+iostream
+-
+exception
+-
+string
+-
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Square.cpp
+Square.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Square.h
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Square.h
+ostream
+-
+
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/main.cpp
+Board.h
+C:/Users/Matan Zilka/CLionProjects/CPP_Projects/Task6_CPP/Board.h
+iostream
+-
+
